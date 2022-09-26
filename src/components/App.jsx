@@ -6,7 +6,7 @@ import Home from "../pages/Home";
 import Login from "../pages/Login";
 import "./styles.css"
 import {Route, Routes} from "react-router-dom"
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
