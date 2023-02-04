@@ -1,0 +1,69 @@
+.form_main {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 3em;
+    border-radius: 20px;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    backdrop-filter: blur(10px);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+
+
+
+ /* gap between cells */
+}
+
+
+
+
+
+
+.form_main > h1 {
+  align-self: center;
+  padding-bottom: 35px;
+ color: rgb(235, 235, 235);
+}
+
+/*just styling the input fields*/
+ input[type=text], input[type=email]{
+  background: #ecf0f3;
+  padding: 10px;
+  width: 200px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+
+  }
+  input[type=text], input[type=email] {
+    margin-left: 5px;
+  }
+
+
+  /* align labels to the right and inputs to the left */
+.reg, .form_main > input {align-self: center;}
+
+
+  /* center the submit button */
+  button[type="submit"] {
+    text-align: center; /* center the text */
+    background-color: #9565f0; /* change the background color of the button */
+    color: #fff; /* change the text color of the button */
+    padding: 0.75em 1.5em; /* add padding to the button */
+    border: none; /* remove the border */
+    border-radius: 0.25em; /* round the corners */
+    font-size: 1.4rem; /* increase the font size */
+    font-weight: 500; /* increase the font weight */
+    cursor: pointer; /* change the cursor to a pointer */
+    transition: all 0.2s ease-in-out; /* add a transition effect */
+    margin-top: 1em; /* add margin between the button and the input fields */
+    align-self: center;
+  }

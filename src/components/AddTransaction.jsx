@@ -36,7 +36,7 @@ const onSubmit = e => {
             </div>
                 <button className="btn">Add transaction</button>
             </form>
-          
+
         </div>
     )
 }

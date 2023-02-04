@@ -1,15 +1,15 @@
-import MainForm from "../components/Forms/MainForm"
+import RegForm from "../components/Forms/RegForm"
 import { GlobalProvider } from "../context/Globalstate"
 
 
 
- function Login() {
+ function Registration() {
     return (
         <GlobalProvider>
 
 
 
-            <MainForm />
+            <RegForm />
 
 
         </GlobalProvider>
@@ -18,4 +18,4 @@ import { GlobalProvider } from "../context/Globalstate"
 
 }
 
-export default Login
+export default Registration
