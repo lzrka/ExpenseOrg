@@ -1,3 +1,11 @@
+import TransactionList from "../components/TransactionList";
+import { GlobalProvider } from "../context/Globalstate";
+
 export default function Expenses() {
-    return <h1>Expenses</h1>
+  return (
+    <GlobalProvider>
+      <h1>Expenses</h1>
+      <TransactionList />;
+    </GlobalProvider>
+  );
 }

@@ -1,5 +1,6 @@
 @import url("./Forms/MainForm.css");
 @import url("./Navbar/Navbar.css");
+@import url("./AddTransaction.css");
 
 * {
   box-sizing: border-box;
@@ -7,7 +8,46 @@
 
 body {
   margin: 0;
-  background: linear-gradient(95deg, rgb(52, 12, 85), rgb(157, 37, 255), rgb(26, 6, 43));
+  background: linear-gradient(-70deg, rgb(52, 12, 85),rgb(97, 27, 155), rgb(147, 36, 238), rgb(68, 16, 112));
   height: 100vh;
   font-family: "Montserrat", sans-serif;
+}
+.income-expense {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.incomes_container {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 3em;
+  border-radius: 20px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
+}
+.expenses_container {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 3em;
+  border-radius: 20px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  backdrop-filter: blur(10px);
+  box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 350px;
 }

@@ -21,7 +21,7 @@
     gap: 1rem;
   }
 
-  .nav a {
+  .nav a, .nav a:visited, nav a:hover {
     text-decoration: none;
     color: white;
     height: 100%;
