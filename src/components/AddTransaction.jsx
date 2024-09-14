@@ -10,12 +10,13 @@ const [description, setText] = useState('');
 const [amount, setAmount] = useState(0);
 const [currency, setCurrency] = useState('');
 const [category, setCategory] = useState('');
+const [date, setDate] = useState('');
 
 const {addTransaction} = useContext(GlobalContext);
 
 const onSubmit = e => {
     console.log(currency)
-    if(description == '' || amount == '' || currency == '' || category == '')
+    if(description == '' || amount == '' || currency == '' || category == '' || date == "")
     alert('All field has to be completed');
 
 
@@ -25,13 +26,15 @@ const onSubmit = e => {
         id: uuidv4(),
         description,
         amount: +amount,
+        date,
         currency,
         category,
-        date: new Date()
+        insertDate: new Date()
     }
 
 
     addTransaction(newTransaction);
+    setDate('');
     setText('');
     setAmount(0);
     setCurrency('');
@@ -69,6 +72,10 @@ const onSubmit = e => {
                         <option value="Clothes">Clothes</option>
                     </select>
                 </div>
+            <div className="form-control">
+             <label htmlFor="date">Date</label>
+             <input type="date" value={date} onChange={(e) => setDate(e.target.value)} />
+            </div>
                 <button className="add_transaction_button">Add transaction</button>
             </form>
 
